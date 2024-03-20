@@ -1,7 +1,7 @@
 export function Banner() {
   return (
-    <main>
-      <h1>Picture frames here</h1>
-    </main>
+    <div className='name-container'>
+      <h1 className='name'>Dima Studio</h1>
+    </div>
   )
 }
