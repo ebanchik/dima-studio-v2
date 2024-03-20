@@ -2,8 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/assets/WorkSans-VariableFont_wght.ttf');
+  font-style: normal;
+}
+
 body, h1 {
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Work Sans';
 }
 
 body {
@@ -12,14 +19,48 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+nav a {
+  margin-right: 10px; /* Adds space between the links */
 }
 
 .name {
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+}
+
+.banner-container {
   text-align: center;
 }
 
-.name-container {
-  text-align: center;
+.frame-container {
+  position: relative;
+  display: inline-block; /* This will allow multiple frames to be aligned side by side */
 }
 
+.frame {
+  width: 320px;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2; /* Higher z-index value to bring the frame to the front */
+}
+
+
+.inner-image {
+  position: absolute;
+  top: 67px; /* Adjust to fit inside the frame */
+  left: 90px; /* Adjust to fit inside the frame */
+  width: 150px; /* Adjust to fit inside the frame */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1;
+}
