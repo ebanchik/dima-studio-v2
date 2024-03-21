@@ -1,5 +1,10 @@
 html {
   scroll-behavior: smooth;
+  width: 100%;
+}
+
+.app-container, .content-container {
+  width: 100%;
 }
 
 @font-face {
@@ -14,9 +19,9 @@ body, h1 {
 }
 
 body {
+  width: 100%;
   margin: 0;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
@@ -36,6 +41,11 @@ nav a {
 .name {
   font-size: 100px;
   color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; /* Ensure it's above the frames */
 }
 
 .banner-container {
@@ -63,4 +73,8 @@ nav a {
   width: 150px; /* Adjust to fit inside the frame */
   height: auto; /* Maintain aspect ratio */
   z-index: 1;
+}
+
+.container {
+  width: 100%;
 }
