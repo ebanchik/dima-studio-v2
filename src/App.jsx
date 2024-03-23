@@ -1,14 +1,18 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
-import { Header } from './Header'
+// import { Header } from './Header'
 import { Content } from './Content'
 import "./App.css"
 
 function App() {
   return (
-    <div className="app-container">
-      <Header/>
-      <Content/>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Routes>
+          <Route path="/" element={<Content />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
