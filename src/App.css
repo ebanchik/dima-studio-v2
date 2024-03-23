@@ -58,8 +58,8 @@ nav a {
 .frame-container {
   position: relative;
   display: inline-block;
-  width: 320px;
-  height: 320px; /* This will allow multiple frames to be aligned side by side */
+  width: 275px;
+  height: 275px; /* This will allow multiple frames to be aligned side by side */
 }
 
 .frame {

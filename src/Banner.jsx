@@ -53,12 +53,12 @@ export function Banner() {
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
       <div className="frame-container">
-        <img src="assets/frame9.png" alt="Image 2" className="frame" />
+        <img src="assets/transparent.png" alt="empty" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
       <div className="frame-container">
-        <img src="assets/frame10.png" alt="Image 2" className="frame" />
+        <img src="assets/transparent.png" alt="empty" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
