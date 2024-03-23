@@ -60,6 +60,7 @@ nav a {
   display: inline-block;
   width: 275px;
   height: 275px; /* This will allow multiple frames to be aligned side by side */
+  transition: transform 0.3s ease;
 }
 
 .frame {

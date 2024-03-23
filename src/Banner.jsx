@@ -1,8 +1,47 @@
-
+import { useEffect } from 'react';
 
 export function Banner() {
+  useEffect(() => {
+    const frames = document.querySelectorAll('.frame-container');
+
+    const handleMouseMove = (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+
+      frames.forEach((frame) => {
+        const frameRect = frame.getBoundingClientRect();
+        const frameX = frameRect.left + frameRect.width / 2;
+        const frameY = frameRect.top + frameRect.height / 2;
+
+        const deltaX = mouseX - frameX;
+        const deltaY = mouseY - frameY;
+        const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
+
+        const maxDistance = 300; // Maximum distance for the effect
+        const effectStrength = 20; // Adjust the strength of the effect
+
+        if (distance < maxDistance) {
+          const angle = Math.atan2(deltaY, deltaX);
+          const offsetX = Math.cos(angle) * (maxDistance - distance) / effectStrength;
+          const offsetY = Math.sin(angle) * (maxDistance - distance) / effectStrength;
+
+          frame.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        } else {
+          frame.style.transform = 'translate(0, 0)';
+        }
+      });
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
-  <div className="container-fluid text-center">
+    <div className="container-fluid text-center">
       <div className="col">
         <h1 className="name">DIMA</h1>
       </div>
@@ -106,42 +145,14 @@ export function Banner() {
       </div>
     </div>
   </div>
-
-
-
-  {/* <div className="row">
-    <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
-        <img src="assets/chair.png" alt="Image 1" className="inner-image" />
-      </div>
-    </div>
-    <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
-        <img src="assets/chair.png" alt="Image 2" className="inner-image" />
-      </div>
-    </div>
-    <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
-        <img src="assets/chair.png" alt="Image 2" className="inner-image" />
-      </div>
-    </div>
-    <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
-        <img src="assets/chair.png" alt="Image 2" className="inner-image" />
-      </div>
-    </div>
-    <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
-        <img src="assets/chair.png" alt="Image 2" className="inner-image" />
-      </div>
-    </div>
-    <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
-        <img src="assets/chair.png" alt="Image 2" className="inner-image" />
-      </div>
-    </div>
-  </div> */}
-
 </div>
-  )
+  );
 }
+
+
+
+
+
+
+
+
