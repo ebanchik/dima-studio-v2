@@ -51,6 +51,11 @@ nav a {
   padding: 50px; /* Adjust the padding to control the size of the circle */
 }
 
+.name a {
+  color: inherit; /* Use the same color as the surrounding text */
+  text-decoration: none; /* Remove the underline */
+}
+
 .banner-container {
   text-align: center;
 }
@@ -87,14 +92,45 @@ nav a {
 
 
 @media (max-width: 767.98px) {
-  .item:nth-last-child(-n+4) {
+  .item:nth-last-child(-n+2) {
     display: none;
   }
 }
 
 /* Hide the last 2 items on medium screens */
-@media (max-width: 1500px) {
-  .item:nth-last-child(-n+2) {
+@media (max-width: 1000px) {
+  .item:nth-last-child(-n+1) {
     display: none;
   }
+}
+ 
+@media (max-width: 1000px) {
+  .item:nth-child(-n+1) {
+    display: none;
+  }
+}
+ 
+
+.about-page {
+  height: 500px;
+}
+
+
+
+.page-enter {
+  transform: translateY(100%);
+}
+
+.page-enter-active {
+  transform: translateY(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.page-exit {
+  transform: translateY(0);
+}
+
+.page-exit-active {
+  transform: translateY(100%);
+  transition: transform 300ms ease-in-out;
 }

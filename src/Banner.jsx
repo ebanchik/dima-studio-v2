@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';  
 
 export function Banner() {
   useEffect(() => {
@@ -43,7 +44,9 @@ export function Banner() {
   return (
     <div className="container-fluid text-center">
       <div className="col">
-        <h1 className="name">DIMA</h1>
+        <h1 className="name">
+          <Link to="/about">DIMA</Link>
+        </h1>
       </div>
 
   <div className="row">
