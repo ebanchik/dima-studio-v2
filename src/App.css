@@ -49,12 +49,18 @@ nav a {
   background-color: #000000; /* Background color of the circle */
   border-radius: 50%; /* Makes the background a circle */
   padding: 50px; /* Adjust the padding to control the size of the circle */
+  transition: transform 0.3s ease;
 }
 
 .name a {
   color: inherit; /* Use the same color as the surrounding text */
   text-decoration: none; /* Remove the underline */
 }
+
+.name:hover {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
 
 .banner-container {
   text-align: center;
@@ -98,13 +104,13 @@ nav a {
 }
 
 /* Hide the last 2 items on medium screens */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .item:nth-last-child(-n+1) {
     display: none;
   }
 }
  
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .item:nth-child(-n+1) {
     display: none;
   }
