@@ -9,6 +9,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Work Sans Semi';
+  src: url('/assets/WorkSans-SemiBold.ttf');
+  font-style: normal;
+}
+
 body, h1 {
   background-color: rgb(255, 255, 255);
   font-family: 'Work Sans';
@@ -111,7 +117,7 @@ nav a {
     display: none;
   }
 }
- 
+
 
 .about-page {
   height: 500px;
@@ -122,6 +128,16 @@ nav a {
   
 }
 
+.about-title {
+  font-family: 'Work Sans Semi';
+}
+
+.about-photo {
+  width: 300px; /* Set the fixed width */
+  height: 400px; /* Set the fixed height */
+  object-fit: cover; /* Optional: this will ensure the image covers the area without distorting its aspect ratio */
+  margin-left: 50px;
+}
 
 .page {
   position: absolute;
