@@ -140,6 +140,7 @@ nav a {
 
 .about-text {
   margin-right: 25px;
+  word-break: keep-all;
 }
 
 .about-photo {
@@ -161,6 +162,8 @@ nav a {
   border-radius: 50%; /* Makes the background a circle */
   padding: 10px; /* Adjust the padding to control the size of the circle */
   transition: transform 0.3s ease;
+  border: none;
+  font-family: 'Work Sans';
 }
 
 .button a {
@@ -181,3 +184,19 @@ nav a {
     transform: translateY(0);
   }
 }
+
+
+.page-exit {
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+
