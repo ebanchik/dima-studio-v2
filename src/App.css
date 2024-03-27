@@ -127,19 +127,45 @@ nav a {
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 150px;
   margin-left: 50px;
   margin-right: 50px;
 }
 
 .about-title {
   font-family: 'Work Sans Semi';
+  font-size: 150px;
+  margin-left: -15px;
+}
+
+.about-text {
+  margin-right: 25px;
 }
 
 .about-photo {
   width: 100%; /* Set the fixed width */
   height: 100%; /* Set the fixed height */
   object-fit: contain; /* Optional: this will ensure the image covers the area without distorting its aspect ratio */
+}
+
+.button {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 3; /* Ensure it's above the frames */
+  background-color: #000000; /* Background color of the circle */
+  border-radius: 50%; /* Makes the background a circle */
+  padding: 10px; /* Adjust the padding to control the size of the circle */
+  transition: transform 0.3s ease;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
 }
 
 .page {
