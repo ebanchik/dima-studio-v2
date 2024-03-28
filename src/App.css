@@ -224,11 +224,22 @@ nav a {
 .feed-page {
   height: 100vh;
   width: 100vw;
-  margin-top: 100px;
+  margin-top: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.feed-title {
+  font-family: 'Work Sans Semi';
+  font-size: 150px;
+  z-index: 10;
+  position: absolute;
+  top: 150px;
+  left: 360px;
+  transform: translateX(-50%);
+}
+
 
 .feed-button {
   font-size: 20px;

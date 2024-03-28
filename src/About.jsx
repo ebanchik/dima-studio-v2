@@ -16,7 +16,7 @@ export function About() {
         <div className="container">
           < Header />
           <button className="button" onClick={handleExit}>DIMA</button>
-              <h1 className="about-title">THE CREATOR</h1>
+          <h1 className="about-title">THE CREATOR</h1>
           <div className="row">
             <div className="col-md-8">
               <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptas sed velit, dicta modi, rem harum architecto mollitia est accusamus deserunt! Quisquam doloribus libero reiciendis vero eius culpa praesentium ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam amet quod eligendi quo. Iusto perspiciatis maiores corporis fugit, expedita vitae excepturi, unde libero quod praesentium, deleniti qui atque tempora asperiores.

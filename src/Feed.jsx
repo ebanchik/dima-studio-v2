@@ -17,10 +17,11 @@ export function Feed() {
       <h1 className="button feed-button">
         <Link to="/" onClick={handleExit}>DIMA</Link>
       </h1>
+      <h1 className="feed-title">FEED</h1>
     <div className={`page feed-page ${isExiting ? 'feed-page-exit' : 'feed-page-enter'}`}>
       <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
       <iframe
-        src="//lightwidget.com/widgets/b6d4455b732e5762a43a69588bc90583.html"
+        src="//lightwidget.com/widgets/61a16a2a55515d9da68a53f812456f2d.html"
         className="lightwidget-widget"
         style={{
           width: '75%',
