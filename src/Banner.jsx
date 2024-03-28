@@ -42,10 +42,10 @@ export function Banner() {
   }, []);
 
   return (
-    <div className="container-fluid text-center">
+    <div className="container-fluid text-center fade-in">
       <div className="col">
         <h1 className="name">
-          <Link to="/about">DIMA</Link>
+        <Link to="/about">DIMA</Link>
         </h1>
       </div>
 

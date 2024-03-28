@@ -16,7 +16,6 @@
 }
 
 body, h1 {
-  background-color: rgb(255, 247, 229);
   font-family: 'Work Sans';
 }
 
@@ -26,6 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  background-color: rgb(255, 247, 229) !important;
 }
 
 header {
@@ -204,5 +204,19 @@ nav a {
     transform: translateY(100%);
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.75s ease-in-out;
+}
+
 
 
