@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Header } from './Header'
 
 export function Feed() {
   const [isExiting, setIsExiting] = useState(false);
@@ -12,6 +13,7 @@ export function Feed() {
 
   return (
     <div>
+      < Header/>
       <h1 className="button feed-button">
         <Link to="/" onClick={handleExit}>DIMA</Link>
       </h1>
@@ -21,7 +23,7 @@ export function Feed() {
         src="//lightwidget.com/widgets/b6d4455b732e5762a43a69588bc90583.html"
         className="lightwidget-widget"
         style={{
-          width: '100%',
+          width: '75%',
           height: '100%',
           border: 0,
           overflow: 'hidden'

@@ -175,6 +175,7 @@ nav a {
 .button a {
   color: white;
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .page {
@@ -224,12 +225,15 @@ nav a {
   height: 100vh;
   width: 100vw;
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feed-button {
   font-size: 20px;
   color: rgb(255, 255, 255);
-  top: 50px;
+  top: 30px;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -242,10 +246,12 @@ nav a {
   font-family: 'Work Sans';
 }
 
-.feed-button a {
-  color: white;
-  text-decoration: none;
+
+.button:hover {
+  transform: translate(-50%, -50%) scale(0.9);
 }
+
+
 
 .header {
   margin-left: 10px;
