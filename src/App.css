@@ -146,7 +146,13 @@ nav a {
 .about-photo {
   width: 100%; /* Set the fixed width */
   height: 100%; /* Set the fixed height */
-  object-fit: contain; /* Optional: this will ensure the image covers the area without distorting its aspect ratio */
+  object-fit: contain; /* Optional: this will ensure the image covers the area without disto
+  rting its aspect ratio */
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-photo:hover {
+  transform: rotate(10deg); /* Adjust the degree to your preference */
 }
 
 .button {
