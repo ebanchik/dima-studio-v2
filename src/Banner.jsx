@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';  
+import { Link } from 'react-router-dom'; 
+ 
 
 export function Banner() {
   useEffect(() => {
@@ -43,6 +44,7 @@ export function Banner() {
 
   return (
     <div className="container-fluid text-center fade-in">
+      
       <div className="col">
         <h1 className="name">
         <Link to="/about">DIMA</Link>

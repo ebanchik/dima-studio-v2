@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Header } from './Header'
 
 export function About() {
   const [isExiting, setIsExiting] = useState(false);
@@ -13,6 +14,7 @@ export function About() {
   return (
     <div className={`page about-page ${isExiting ? 'page-exit' : 'page-enter'}`}>
         <div className="container">
+          < Header />
           <button className="button" onClick={handleExit}>DIMA</button>
               <h1 className="about-title">THE CREATOR</h1>
           <div className="row">
