@@ -243,8 +243,14 @@ nav a {
   gap: 0; /* Start with no gap between the letters */
 }
 
+.feed-title span {
+  display: inline-block; /* Necessary for the animation to work on inline elements */
+  margin-right: 0; /* Start with no margin on the right */
+  transition: margin-right 0.5s ease; /* Smooth transition for the margin-right property */
+}
+
 .feed-title:hover span {
-  animation: spreadRight 0.5s forwards;
+  margin-right: 10px;
 }
 
 .feed-title span:nth-child(2) {
