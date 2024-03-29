@@ -26,7 +26,20 @@ body {
   align-items: center;
   overflow-x: hidden;
   background-color: rgb(255, 247, 229) !important;
+  cursor: none;
 }
+
+a:hover, button:hover, link:hover {
+  cursor: none;
+}
+
+button:not(:disabled):hover {
+  cursor: none;
+}
+
+
+
+/*##################### HEADER ################*/
 
 header {
   position: absolute;
@@ -35,10 +48,27 @@ header {
   padding: 10px; /* Adjust the padding as needed */
 }
 
+.header {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.link {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Work Sans';
+  transition: font-size 0.3s ease;
+}
+
+.link:hover {
+  font-size: 14px; /* Adjust the font size to your preference */
+}
 
 nav a {
   margin-right: 10px; /* Adds space between the links */
 }
+
+/* #####################    ################### */
 
 .name {
   font-size: 100px;
@@ -298,19 +328,27 @@ nav a {
 }
 
 
-
-.header {
-  margin-left: 10px;
-  margin-top: 10px;
+#custom-cursor {
+  cursor: auto;
 }
 
-.link {
-  color: #000000;
-  text-decoration: none;
-  font-family: 'Work Sans';
-  transition: font-size 0.3s ease;
+#custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  pointer-events: none;
+  display: none;
+  transition: all 0.1s ease-out;
+  z-index: 9999; /* Ensure the cursor is above other elements */
 }
 
-.link:hover {
-  font-size: 14px; /* Adjust the font size to your preference */
+#custom-cursor.hovered {
+  width: 20px; /* Bigger size for hovered state */
+  height: 20px;
+  margin-left: -10px; /* Adjust based on the size to keep the cursor centered */
+  margin-top: -10px;
+  background-color: transparent;
+  border: 3px solid rgb(0, 0, 0); /* Outlined look */
 }
