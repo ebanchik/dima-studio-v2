@@ -35,6 +35,7 @@ header {
   padding: 10px; /* Adjust the padding as needed */
 }
 
+
 nav a {
   margin-right: 10px; /* Adds space between the links */
 }
@@ -303,8 +304,13 @@ nav a {
   margin-top: 10px;
 }
 
-.header a {
+.link {
   color: #000000;
   text-decoration: none;
   font-family: 'Work Sans';
+  transition: font-size 0.3s ease;
+}
+
+.link:hover {
+  font-size: 14px; /* Adjust the font size to your preference */
 }
