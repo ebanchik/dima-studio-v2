@@ -352,3 +352,13 @@ nav a {
   background-color: transparent;
   border: 3px solid rgb(0, 0, 0); /* Outlined look */
 }
+
+
+.inquire {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+}
