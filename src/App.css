@@ -360,5 +360,6 @@ nav a {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
 }

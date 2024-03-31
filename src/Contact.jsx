@@ -1,6 +1,11 @@
+import { Header } from './Header'
+
 export function Contact() {
 
   return (
-    <p className="inquire">Inquire</p>
+    <div>
+      <Header />
+      <p className="inquire">Inquire</p>
+    </div>
   )
 }
