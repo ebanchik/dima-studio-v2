@@ -1,6 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const CustomCursor = () => {
+  const [key, setKey] = useState(0);
+
   useEffect(() => {
     let frameId;
 
@@ -8,10 +10,8 @@ export const CustomCursor = () => {
       const cursor = document.getElementById('custom-cursor');
       if (!cursor) return;
 
-      // Cancel the previous animation frame to prevent stacking
       if (frameId) cancelAnimationFrame(frameId);
 
-      // Update cursor position using requestAnimationFrame for smoother performance
       frameId = requestAnimationFrame(() => {
         cursor.style.left = `${e.clientX}px`;
         cursor.style.top = `${e.clientY}px`;
@@ -21,7 +21,6 @@ export const CustomCursor = () => {
 
     window.addEventListener('mousemove', moveCursor);
 
-    // Functions for adding and removing 'hovered' class
     const addHoverEffect = () => {
       const cursor = document.getElementById('custom-cursor');
       cursor?.classList.add('hovered');
@@ -32,13 +31,11 @@ export const CustomCursor = () => {
       cursor?.classList.remove('hovered');
     };
 
-    // Apply hover effects to all links and buttons
     document.querySelectorAll('a, button').forEach(elem => {
       elem.addEventListener('mouseenter', addHoverEffect);
       elem.addEventListener('mouseleave', removeHoverEffect);
     });
 
-    // Cleanup function to remove event listeners and cancel animation frame
     return () => {
       window.removeEventListener('mousemove', moveCursor);
       document.querySelectorAll('a, button').forEach(elem => {
@@ -47,6 +44,17 @@ export const CustomCursor = () => {
       });
 
       if (frameId) cancelAnimationFrame(frameId);
+    };
+  }, [key]);
+
+  // Trigger a re-render of the cursor component when navigating between pages
+  useEffect(() => {
+    const unlisten = window.addEventListener('popstate', () => {
+      setKey(prevKey => prevKey + 1);
+    });
+
+    return () => {
+      window.removeEventListener('popstate', unlisten);
     };
   }, []);
 

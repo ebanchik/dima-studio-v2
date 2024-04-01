@@ -1,18 +1,24 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Header } from './Header'
 
 export function About() {
-  const [isExiting, setIsExiting] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const cursor = document.getElementById('custom-cursor');
+    if (cursor) {
+      cursor.classList.remove('hovered');
+    }
+  }, []);
+
   const handleExit = () => {
-    setIsExiting(true);
-    setTimeout(() => navigate('/'), 500); // Match the duration of the slideDown animation
+    navigate('/');
   };
 
+
   return (
-    <div className={`page about-page ${isExiting ? 'page-exit' : 'page-enter'}`}>
+    <div className="page about-page">
         <div className="container">
           < Header />
           <button className="button" onClick={handleExit}>DIMA</button>

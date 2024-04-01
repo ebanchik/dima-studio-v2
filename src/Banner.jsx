@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom'; 
- 
+
 
 export function Banner() {
   useEffect(() => {
     const frames = document.querySelectorAll('.frame-container');
+    const cursor = document.getElementById('custom-cursor');
+
 
     const handleMouseMove = (e) => {
       const mouseX = e.clientX;
@@ -33,8 +34,14 @@ export function Banner() {
         }
       });
     };
+    
 
     document.addEventListener('mousemove', handleMouseMove);
+
+    if (cursor) {
+      cursor.classList.remove('hovered');
+    }
+
 
     // Clean up the event listener when the component unmounts
     return () => {
@@ -47,7 +54,7 @@ export function Banner() {
       
       <div className="col">
         <h1 className="name">
-        <Link to="/about">DIMA</Link>
+        <a href="/about">DIMA</a>
         </h1>
       </div>
 
