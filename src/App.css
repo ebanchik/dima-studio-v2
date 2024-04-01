@@ -341,18 +341,18 @@ nav a {
   background-color: black;
   pointer-events: none;
   display: none;
-  transition: all 0.1s ease-out;
+  transition: all 0.2s ease-out;
   z-index: 9999; /* Ensure the cursor is above other elements */
 }
 
 #custom-cursor.hovered {
   display: block;
-  width: 20px; /* Bigger size for hovered state */
-  height: 20px;
+  width: 30px; /* Bigger size for hovered state */
+  height: 30px;
   margin-left: -10px; /* Adjust based on the size to keep the cursor centered */
   margin-top: -10px;
   background-color: transparent;
-  border: 3px solid rgb(0, 0, 0); /* Outlined look */
+  border: 2px solid rgb(0, 0, 0); /* Outlined look */
 }
 
 
