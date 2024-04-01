@@ -4,9 +4,9 @@ export function Contact() {
   return (
     <div>
       <Header />
-      <p className="inquire">
-        <a className="inquire" href="mailto:your-email@example.com">Inquire</a>
-      </p>
+      <div className="inquire-container">
+        <a href="mailto:example@example.com" className="inquire">Inquire</a>
+      </div>
     </div>
   );
 }

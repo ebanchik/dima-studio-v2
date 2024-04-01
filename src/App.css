@@ -29,7 +29,7 @@ body {
   cursor: none;
 }
 
-a:hover, button:hover, link:hover {
+a:hover, button:hover, link:hover, .inquire:hover {
   cursor: none;
 }
 
@@ -345,6 +345,7 @@ nav a {
 }
 
 #custom-cursor.hovered {
+  display: block;
   width: 20px; /* Bigger size for hovered state */
   height: 20px;
   margin-left: -10px; /* Adjust based on the size to keep the cursor centered */
@@ -354,16 +355,22 @@ nav a {
 }
 
 
-.inquire {
+.inquire-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.inquire a {
+.inquire {
   font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   color: #000000;
+  transition: transform 0.3s ease;
+  transform: translate(-50%, -50%);
+}
+
+.inquire:hover {
+  transform: translate(-50%, -50%) scale(0.9);
 }
