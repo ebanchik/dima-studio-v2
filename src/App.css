@@ -361,6 +361,7 @@ nav a {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 .inquire {
@@ -370,6 +371,9 @@ nav a {
   color: #000000;
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
 }
 
 .inquire:hover {
