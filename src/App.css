@@ -334,6 +334,7 @@ nav a {
 
 #custom-cursor {
   position: fixed;
+  will-change: transform;
   width: 20px;
   height: 20px;
   border-radius: 50%;
