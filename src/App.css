@@ -355,11 +355,15 @@ nav a {
 
 
 .inquire {
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.inquire a {
   font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  color: #000000;
 }
