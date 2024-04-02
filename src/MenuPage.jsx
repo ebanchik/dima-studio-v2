@@ -16,13 +16,13 @@ export function MenuPage() {
 
   const goBack = () => {
     navigate(-1);
-   };
+  };
 
   return (
     <div className={`menu-page ${isVisible ? 'fade-in' : ''}`}>
       <button className="close-button" onClick={goBack}>×</button>
       <nav className="mobile-nav">
-        <ul className="mobile-nav-list">
+        <ul className={`mobile-nav-list ${isVisible ? 'cascade-in' : ''}`}>
           <li><a href="/">HOME</a></li>
           <li><a href="/about">ABOUT</a></li>
           <li><a href="/feed">FEED</a></li>

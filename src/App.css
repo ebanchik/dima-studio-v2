@@ -407,7 +407,7 @@ nav a {
   align-items: center; /* Center vertically */
   height: 100vh; /* Use the full height of the viewport */
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.8s ease;
 }
 
 .menu-page.fade-in {
@@ -446,6 +446,39 @@ nav a {
   font-size: 24px;
   color: #333;
 }
+
+@keyframes cascade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav-list.cascade-in li {
+  animation: cascade 0.5s ease forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+.mobile-nav-list.cascade-in li:nth-child(1) {
+  --i: 1;
+}
+
+.mobile-nav-list.cascade-in li:nth-child(2) {
+  --i: 2;
+}
+
+.mobile-nav-list.cascade-in li:nth-child(3) {
+  --i: 3;
+}
+
+.mobile-nav-list.cascade-in li:nth-child(4) {
+  --i: 4;
+}
+
 
 
 /* ################# MOBILE ################# */
