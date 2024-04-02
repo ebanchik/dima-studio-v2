@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import { Header } from './Header'
 
 export function Banner() {
   useEffect(() => {
@@ -50,8 +50,8 @@ export function Banner() {
   }, []);
 
   return (
-    <div className="container-fluid text-center fade-in">
-      
+    <div className="container-fluid text-center fade-in banner-page">
+      <Header />
       <div className="col">
         <h1 className="name">
         <a href="/about">DIMA</a>

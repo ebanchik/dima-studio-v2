@@ -97,6 +97,10 @@ nav a {
 
 /* ################# BANNER ################# */
 
+.banner-page .header {
+  display: none;
+}
+
 .name {
   font-size: 100px;
   color: rgb(255, 255, 255);
@@ -408,6 +412,10 @@ nav a {
     display: none;
   }
 
+  .banner-page .header {
+    display: inline;
+  }
+  
   .menu-toggle {
     display: block;
     cursor: pointer;
