@@ -1,10 +1,35 @@
+import { useEffect } from 'react';
+
 export function Header() {
+  useEffect(() => {
+    const toggleButton = document.getElementById('menu-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    const toggleMenu = () => {
+      if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
+        dropdownMenu.style.display = 'flex';
+      } else {
+        dropdownMenu.style.display = 'none';
+      }
+    };
+
+    toggleButton.addEventListener('click', toggleMenu);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      toggleButton.removeEventListener('click', toggleMenu);
+    };
+  }, []);
+
   return (
     <header>
-      <nav className="header">
-        <a className="link" href="/">HOME</a> <a className="link" href="/about">ABOUT</a> <a className="link" href="/feed">FEED</a>
+      <button id="menu-toggle" className="menu-toggle">☰</button>
+      <nav className="header" id="dropdown-menu">
+        <a className="link" href="/">HOME</a>
+        <a className="link" href="/about">ABOUT</a>
+        <a className="link" href="/feed">FEED</a>
         <a className="link" href="/contact">CONTACT</a>
       </nav>
     </header>
-  )
+  );
 }

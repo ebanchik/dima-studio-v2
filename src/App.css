@@ -29,6 +29,33 @@ body {
   cursor: none;
 }
 
+#custom-cursor {
+  cursor: auto;
+}
+
+#custom-cursor {
+  position: fixed;
+  will-change: transform;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  pointer-events: none;
+  display: none;
+  transition: all 0.2s ease-out;
+  z-index: 9999; /* Ensure the cursor is above other elements */
+}
+
+#custom-cursor.hovered {
+  display: block;
+  width: 30px; /* Bigger size for hovered state */
+  height: 30px;
+  margin-left: -10px; /* Adjust based on the size to keep the cursor centered */
+  margin-top: -10px;
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0); /* Outlined look */
+}
+
 a:hover, button:hover, link:hover, .inquire:hover {
   cursor: none;
 }
@@ -68,7 +95,7 @@ nav a {
   margin-right: 10px; /* Adds space between the links */
 }
 
-/* #####################    ################### */
+/* ################# BANNER ################# */
 
 .name {
   font-size: 100px;
@@ -148,9 +175,10 @@ nav a {
   }
 }
 
+/* ################# ABOUT ################# */
 
 .about-page {
-  height: 500px;
+  height: 100%;
   width: 100%;
   word-break: break-all;
   align-items: center;
@@ -175,6 +203,7 @@ nav a {
 }
 
 .about-photo {
+  max-width: 100%;
   width: 100%; /* Set the fixed width */
   height: 100%; /* Set the fixed height */
   object-fit: contain; /* Optional: this will ensure the image covers the area without disto
@@ -249,6 +278,8 @@ nav a {
     transform: translateY(100%);
   }
 }
+
+/* ################# FEED ################# */
 
 .feed-page {
   display: flex;
@@ -328,32 +359,7 @@ nav a {
 }
 
 
-#custom-cursor {
-  cursor: auto;
-}
-
-#custom-cursor {
-  position: fixed;
-  will-change: transform;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: black;
-  pointer-events: none;
-  display: none;
-  transition: all 0.2s ease-out;
-  z-index: 9999; /* Ensure the cursor is above other elements */
-}
-
-#custom-cursor.hovered {
-  display: block;
-  width: 30px; /* Bigger size for hovered state */
-  height: 30px;
-  margin-left: -10px; /* Adjust based on the size to keep the cursor centered */
-  margin-top: -10px;
-  background-color: transparent;
-  border: 2px solid rgb(0, 0, 0); /* Outlined look */
-}
+/* ################# INQUIRE ################# */
 
 
 .inquire-container {
@@ -377,4 +383,56 @@ nav a {
 
 .inquire:hover {
   transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+/* ################# MOBILE ################# */
+
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  /* Add more styles for the button as needed */
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .header {
+    display: none;
+    flex-direction: column;
+    /* Add more styles for the dropdown menu as needed */
+  }
+
+  .header a {
+    display: block;
+    /* Add more styles for the links as needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-photo {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    height: auto; /* Adjust to auto or a larger fixed height */
+  }
 }

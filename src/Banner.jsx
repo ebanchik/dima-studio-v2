@@ -60,32 +60,32 @@ export function Banner() {
 
   <div className="row">
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame1.png" alt="Image 1" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame2.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame3.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame4.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame5.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame6.png" alt="Image 2" className="frame" />
       </div>
     </div>
@@ -93,32 +93,32 @@ export function Banner() {
 
   <div className="row">
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame7.png" alt="Image 1" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame8.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/transparent.png" alt="empty" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/transparent.png" alt="empty" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame11.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame12.png" alt="Image 2" className="frame" />
       </div>
     </div>
@@ -127,32 +127,32 @@ export function Banner() {
 
   <div className="row">
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame13.png" alt="Image 1" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame14.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame15.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame16.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame17.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container">
+      <div className="frame-container hide-on-mobile">
         <img src="assets/frame18.png" alt="Image 2" className="frame" />
       </div>
     </div>
