@@ -18,7 +18,7 @@ export function About() {
 
 
   return (
-    <div className="page about-page">
+    <div id="page-content" className="page about-page page-content">
         <div className="container">
           < Header />
           <button className="button" onClick={handleExit}>DIMA</button>

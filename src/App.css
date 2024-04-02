@@ -64,6 +64,9 @@ button:not(:disabled):hover {
   cursor: none;
 }
 
+.menu-toggle {
+  display: none;
+}
 
 
 /*##################### HEADER ################*/
@@ -79,6 +82,12 @@ header {
   margin-left: 10px;
   margin-top: 10px;
 }
+
+.navbar {
+  display: none;
+  /* Other styles */
+}
+
 
 .link {
   color: #000000;
@@ -398,6 +407,7 @@ nav a {
 
   body {
     cursor: auto; /* Use the default cursor on mobile */
+    width: 100vw;
   }
 
   .custom-cursor {
@@ -412,25 +422,30 @@ nav a {
     display: none;
   }
 
-  .banner-page .header {
-    display: inline;
-  }
-  
   .menu-toggle {
     display: block;
     cursor: pointer;
-    /* Add more styles for the button as needed */
   }
 
-  .header .navbar {  /* Targeting the "navbar" class */
+  .header {
     display: none;
-    flex-direction: column;
-    /* Add more styles for the dropdown menu as needed */
   }
 
-  .header .navbar a {  /* Targeting the "navbar" class */
-    display: block;
-    /* Add more styles for the links as needed */
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .opaque {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .about-title {
