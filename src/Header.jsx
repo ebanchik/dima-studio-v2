@@ -22,9 +22,9 @@ export function Header() {
   }, []);
 
   return (
-    <header>
+    <header className="header">
       <button id="menu-toggle" className="menu-toggle">☰</button>
-      <nav className="header" id="dropdown-menu">
+      <nav className="navbar" id="dropdown-menu">  {/* Change class to "navbar" */}
         <a className="link" href="/">HOME</a>
         <a className="link" href="/about">ABOUT</a>
         <a className="link" href="/feed">FEED</a>

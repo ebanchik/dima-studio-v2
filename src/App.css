@@ -389,50 +389,66 @@ nav a {
 /* ################# MOBILE ################# */
 
 
+/* Mobile Styles */
 @media (max-width: 768px) {
+
+  body {
+    cursor: auto; /* Use the default cursor on mobile */
+  }
+
+  .custom-cursor {
+    display: none;
+  }
+
+  #custom-cursor {
+    display: none !important; /* Ensure the custom cursor is hidden on mobile */
+  }
+
   .hide-on-mobile {
     display: none;
   }
-}
 
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  /* Add more styles for the button as needed */
-}
-
-@media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    cursor: pointer;
+    /* Add more styles for the button as needed */
   }
 
-  .header {
+  .header .navbar {  /* Targeting the "navbar" class */
     display: none;
     flex-direction: column;
     /* Add more styles for the dropdown menu as needed */
   }
 
-  .header a {
+  .header .navbar a {  /* Targeting the "navbar" class */
     display: block;
     /* Add more styles for the links as needed */
   }
-}
 
-@media (max-width: 768px) {
   .about-title {
     font-size: 50px;
+    margin-left: 0px;
+    text-align: center;
   }
-}
 
-@media (max-width: 768px) {
   .about-photo {
-    height: auto;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 25px;
+    margin-top: 15px;
   }
-}
 
-@media (max-width: 768px) {
   .about-page {
     height: auto; /* Adjust to auto or a larger fixed height */
   }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  .about-text {
+    margin-left: 5px;
+    text-align: center;
+  }
+
 }
