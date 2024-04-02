@@ -399,6 +399,55 @@ nav a {
 }
 
 
+/* ################# MENUPAGE ################# */
+
+.menu-page {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Use the full height of the viewport */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.menu-page.fade-in {
+  opacity: 1;
+}
+
+.mobile-nav {
+  /* Add your mobile-specific styles here */
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center the text horizontally */
+}
+
+.mobile-nav-list li {
+  margin-bottom: 10px; /* Add spacing between menu items */
+}
+
+.mobile-nav-list li a {
+  font-family: 'Work Sans';
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.close-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensure it's above other content */
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #333;
+}
+
+
 /* ################# MOBILE ################# */
 
 
