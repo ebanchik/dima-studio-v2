@@ -1,17 +1,24 @@
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react'
 
 export function Header() {
-  const navigate = useNavigate(); // Corrected: useNavigate instead of navigate
+  const navigate = useNavigate(); 
+  const [menuOpen, setMenuOpen] = useState(false);
   
   const enterMenu = () => {
-    navigate('/menu');
+    setMenuOpen(true);
+    setTimeout(() => {
+      setMenuOpen(false);
+      navigate('/menu');
+    }, 500); // Adjust the delay (in milliseconds) as needed
   };
+
 
   return (
     <header>
-      <button id="menu-toggle" className="menu-toggle" onClick={enterMenu}>
+      <button id="menu-toggle" className={`menu-toggle ${menuOpen ? 'menu-open' : ''}`} onClick={enterMenu}>
         <img src="assets/lampchain.png" alt="Menu Toggle" />
-    </button>
+      </button>
       <nav className="header" id="dropdown-menu">
         <a className="link" href="/">HOME</a>
         <a className="link" href="/about">ABOUT</a>

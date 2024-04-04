@@ -528,16 +528,54 @@ nav a {
     cursor: pointer;
     border: none;
     background: none;
+    position: relative;
   }
 
   .menu-toggle img {
     width: 100px; /* Adjust the width as needed */
     height: auto;
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: -10px;
+    transition: transform 0.3s ease;
      /* Maintain aspect ratio */
   }
+
+ /* Use consistent units and combine translate functions */
+ .menu-toggle.menu-open img {
+  transform: translateY(10px); /* Move down */
+}
+
+  /* Add vendor prefixes for better compatibility */
+  .menu-toggle.menu-open img {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+    animation: moveUp 0.3s forwards;
+  }
+
+  @keyframes moveDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px); /* Move down */
+    }
+  }
+  
+  .menu-toggle.menu-open img {
+    animation: moveDownUp 0.6s forwards 0.3s; /* Delay the moveUp animation */
+  }
+  
+  @keyframes moveDownUp {
+    0% {
+      transform: translateY(10px); /* Start from the down position */
+    }
+    100% {
+      transform: translateY(-50px); /* Move up */
+    }
+  }
+
 
   .header {
     display: none;
