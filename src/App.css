@@ -138,11 +138,12 @@ nav a {
   text-align: center;
 }
 
+
 .frame-container {
   position: relative;
   display: inline-block;
-  width: 275px;
-  height: 275px; /* This will allow multiple frames to be aligned side by side */
+  width: 100%;
+  height: auto; /* This will allow multiple frames to be aligned side by side */
   transition: transform 0.3s ease;
 }
 
