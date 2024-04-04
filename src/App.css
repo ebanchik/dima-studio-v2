@@ -138,6 +138,10 @@ nav a {
   text-align: center;
 }
 
+.app-container {
+  height: 100vh;
+}
+
 
 .frame-container {
   position: relative;

@@ -56,7 +56,7 @@ export function Banner() {
         <a href="/about">DIMA</a>
         </h1> 
 
-  <div className="row justify-content-center align-items-center">
+  <div className="row justify-content-center align-items-center" style={{ height: "33vh" }}>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
       <div className="frame-container hide-on-mobile">
         <img src="assets/frame1.png" alt="Image 1" className="frame" />
@@ -89,7 +89,7 @@ export function Banner() {
     </div>
   </div>
 
-  <div className="row justify-content-center align-items-center">
+  <div className="row justify-content-center align-items-center" style={{ height: "33vh" }}>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
       <div className="frame-container hide-on-mobile d-flex justify-content-center">
         <img src="assets/frame7.png" alt="Image 1" className="frame" />
@@ -123,7 +123,7 @@ export function Banner() {
   </div>
 
 
-  <div className="row justify-content-center align-items-center">
+  <div className="row justify-content-center align-items-center" style={{ height: "33vh" }}>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
       <div className="frame-container hide-on-mobile">
         <img src="assets/frame13.png" alt="Image 1" className="frame" />
@@ -155,6 +155,9 @@ export function Banner() {
       </div>
     </div>
   </div>
+
+
+  
 </div>
   );
 }
