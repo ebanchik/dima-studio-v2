@@ -91,32 +91,32 @@ export function Banner() {
 
   <div className="row justify-content-center align-items-center" style={{ height: "33vh" }}>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container hide-on-mobile d-flex justify-content-center">
+      <div className="frame-container hide-on-mobile justify-content-center">
         <img src="assets/frame7.png" alt="Image 1" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container hide-on-mobile d-flex justify-content-center">
+      <div className="frame-container hide-on-mobile justify-content-center">
         <img src="assets/frame8.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container hide-on-mobile d-flex justify-content-center">
+      <div className="frame-container hide-on-mobile justify-content-center">
         <img src="assets/transparent.png" alt="empty" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container hide-on-mobile d-flex justify-content-center">
+      <div className="frame-container hide-on-mobile justify-content-center">
         <img src="assets/transparent.png" alt="empty" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container hide-on-mobile d-flex justify-content-center">
+      <div className="frame-container hide-on-mobile justify-content-center">
         <img src="assets/frame11.png" alt="Image 2" className="frame" />
       </div>
     </div>
     <div className="col-xl-2 col-l-2 col-md-3 col-sm-4 col-6 item">
-      <div className="frame-container hide-on-mobile d-flex justify-content-center">
+      <div className="frame-container hide-on-mobile justify-content-center">
         <img src="assets/frame12.png" alt="Image 2" className="frame" />
       </div>
     </div>

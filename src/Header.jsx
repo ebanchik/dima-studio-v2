@@ -9,7 +9,9 @@ export function Header() {
 
   return (
     <header>
-      <button id="menu-toggle" className="menu-toggle" onClick={enterMenu}>☰</button>
+      <button id="menu-toggle" className="menu-toggle" onClick={enterMenu}>
+        <img src="assets/lampchain.png" alt="Menu Toggle" />
+    </button>
       <nav className="header" id="dropdown-menu">
         <a className="link" href="/">HOME</a>
         <a className="link" href="/about">ABOUT</a>

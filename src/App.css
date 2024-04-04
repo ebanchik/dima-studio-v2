@@ -526,6 +526,17 @@ nav a {
   .menu-toggle {
     display: block;
     cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  .menu-toggle img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+     /* Maintain aspect ratio */
   }
 
   .header {
